@@ -379,13 +379,13 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                    
                         <a href="feature.html" class="nav-item nav-link">Feature</a>
                  
                         <a href="menu.html" class="nav-item nav-link">Menu</a>
                         
                         <a href="booking.html" class="nav-item nav-link active">Booking</a>
-                     
+                        <a href="about.html" class="nav-item nav-link">About </a> 
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
                 </div>
@@ -417,167 +417,132 @@
             </h1>
             
           </div>
-
-
-          
-
-        <!-- Booking Start -->
-        <div class="booking">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="booking-content">
-                            <div class="section-header">
-                                <p>Book A Table</p>
-                                
-                                <h1>Book Your Table For Private Dinners & Happy Hours</h1>
-                                
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                   <h5>
-                                    "Plan your next private dinner or happy hour with us. Discover delicious menus and refreshing drinks in a welcoming setting."</h5> 
-
-                            </div>
-                        </div>
-                    </div><br><br><br>
-                    <div class="col-lg-5">
-                        <div class="booking-form">
-                            <form id="bookingForm">
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required="required" />
-
-                                        
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="far fa-user"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group">
-
-                                        <input type="email" id="email" name="email" class="form-control" 
-                                        placeholder="Email" required="required" />
-
-
-
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="far fa-envelope"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group">
-
-                                    
-                                         <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile" required="required" />
-
-
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="input-group date" id="date" data-target-input="nearest">
-
-                                        <input type="text" id="bookingDate" name="bookingDate" class="form-control datetimepicker-input" 
-                                        placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
-
-                                     
-
-                                        <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                   
-                                    <select class="form-control" id="payment_method" name="payment_method" onchange="handlePaymentMethodChange()" required>
-                                        <option value="">Select Payment Method</option>
-                                        <option value="credit_card">Credit Card</option>
-                                        <option value="jazz_cash">Jazz Cash</option>
-                                        <option value="easy_paisa">Easy Paisa</option>
-                                    </select>
-                                </div>
-                                
-                                <div id="credit-card-details" class="payment-method-details">
-                                    <div class="form-group">
-                                       
-                                        <input type="email" id="email" name="email" class="form-control" 
-                                        placeholder="Card Number" required="required" />
-                                    </div>
-                                    <div class="form-group">
-                                        
-                                    </div>
-                                    <div class="form-group">
-                                        
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div id="jazz-cash-details" class="payment-method-details">
-                                    <div class="form-group">
-                                        <label for="jazz-cash-number">Jazz Cash Number:</label>
-                                        <input type="text" class="form-control" id="jazz-cash-number" name="jazz_cash_number" placeholder="+920000000000" pattern="[+0-9]{13}">
-                                    </div>
-                                </div>
-                                
-                                <div id="easy-paisa-details" class="payment-method-details">
-                                    <div class="form-group">
-                                        <label for="easy-paisa-number">Easy Paisa Number:</label>
-                                        <input type="text" class="form-control" id="easy-paisa-number" name="easy_paisa_number" placeholder="+920000000000" pattern="[+0-9]{13}">
-                                    </div>
-                                </div>
-                                
-                                <div class="control-group">
-                                    <div class="input-group time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
-                                        <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="control-group">
-                                    <div class="input-group">
-                                        <select class="custom-select form-control">
-                                            <option selected>Guest</option>
-                                            <option value="1">1 Guest</option>
-                                            <option value="2">2 Guest</option>
-                                            <option value="3">3 Guest</option>
-                                            <option value="4">4 Guest</option>
-                                            <option value="5">5 Guest</option>
-                                            <option value="6">6 Guest</option>
-                                            <option value="7">7 Guest</option>
-                                            <option value="8">8 Guest</option>
-                                            <option value="9">9 Guest</option>
-                                            <option value="10">10 Guest</option>
-                                        </select>
-                                        <div class="input-group-append">
-                                            <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <button id="submitButton" type="submit" class="btn custom-btn"
-                                 onclick="submitFormViaWhatsApp()">
-                                    Submit via WhatsApp &nbsp;
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
-                                     alt="WhatsApp" width="20" height="20">
-                                </button>
-                                
-                             
-                            </form>
-                        </div>
-                        
+      <!-- Booking Start -->
+<div class="booking">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="booking-content">
+                    <div class="section-header">                        <p>Book A Table</p>
+                        <h1>Book Your Table For Private Dinners & Happy Hours</h1>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            <h5>"Plan your next private dinner or happy hour with us. Discover delicious menus and refreshing drinks in a welcoming setting."</h5>
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-5">
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <div class="control-group">
+                            <div class="input-group">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Name" required="required" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="far fa-user"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required="required" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group">
+                                <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile" required="required" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group date" id="date" data-target-input="nearest">
+                                <input type="text" id="bookingDate" name="bookingDate" class="form-control datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                                <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group time" id="time" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" name="time" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group">
+                                <select id="customer" name="customer" class="custom-select form-control">
+                                    <option selected>Guest</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8 Guests</option>
+                                    <option value="9">9 Guests</option>
+                                    <option value="10">10 Guests</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="payment_method" name="payment_method" onchange="handlePaymentMethodChange()" required>
+                                <option value="">Select Payment Method</option>
+                                <option value="credit_card">Credit Card</option>
+                                <option value="jazz_cash">Jazz Cash</option>
+                                <option value="easy_paisa">Easy Paisa</option>
+                            </select>
+                        </div>
+
+                        <div id="credit-card-details" class="payment-method-details">
+                            <div class="form-group">
+                                <input type="text" id="card-number" name="card_number" class="form-control" placeholder="Card Number" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="card-expiry" name="card_expiry" class="form-control" placeholder="Expiry Date (MM/YYYY)" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="card-cvv" name="card_cvv" class="form-control" placeholder="CVV" required="required" />
+                            </div>
+                        </div>
+
+                        <div id="jazz-cash-details" class="payment-method-details" style="display: none;">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="jazz-cash-number" name="jazz_cash_number" placeholder="+920000000000" pattern="[+0-9]{13}">
+                            </div>
+                        </div>
+
+                        <div id="easy-paisa-details" class="payment-method-details" style="display: none;">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="easy-paisa-number" name="easy_paisa_number" placeholder="+920000000000" pattern="[+0-9]{13}">
+                            </div>
+                        </div>
+
+                        <button id="submitButton" type="submit" class="btn custom-btn" onclick="submitFormViaWhatsApp()">
+                            Submit via WhatsApp &nbsp;
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" width="20" height="20">
+                        </button>
+
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- Booking End -->
-        
+    </div>
+</div>
+<!-- Booking End -->
+
+ 
     
         <!-- Footer Start -->
         <footer class="footer-section">
@@ -636,10 +601,11 @@
                                 </div>
                                 <ul>
                                     <li><a href="./index.html">Home</a></li>
-                                    <li><a href="./about.html">About</a></li>
+                                 
                                     <li><a href="./feature.html">Features</a></li>
                                     <li><a href="./menu.html">Menu</a></li>
                                     <li><a href="./booking.html">Booking</a></li>
+                                    <li><a href="./about.html">About Us</a></li>
                                     <li><a href="./contact.html">Contact us</a></li>
                                     
                             
@@ -683,27 +649,21 @@
                 </div>
                 </div>
         </footer>
+
+
         <script>
+            // Function to handle changes in payment method selection
             function handlePaymentMethodChange() {
                 const paymentMethod = document.getElementById('payment_method').value;
-        
+                
                 // Hide all payment details sections
                 document.querySelectorAll('.payment-method-details').forEach(el => {
                     el.style.display = 'none';
                 });
-        
+                
                 // Show the selected payment method details
                 if (paymentMethod === 'credit_card') {
                     document.getElementById('credit-card-details').style.display = 'block';
-        
-                    // Validate credit card number
-                    const cardNumberInput = document.getElementById('card-number');
-                    cardNumberInput.addEventListener('input', function (event) {
-                        const cardNumber = event.target.value.replace(/\D/g, ''); // Remove non-numeric characters
-                        const formattedCardNumber = formatCreditCardNumber(cardNumber);
-                        event.target.value = formattedCardNumber;
-                        validateCreditCard(cardNumber);
-                    });
                 } else if (paymentMethod === 'jazz_cash') {
                     document.getElementById('jazz-cash-details').style.display = 'block';
                 } else if (paymentMethod === 'easy_paisa') {
@@ -711,14 +671,13 @@
                 }
             }
         
+            // Function to format credit card number for better readability
             function formatCreditCardNumber(cardNumber) {
-                // Format card number with spaces for better readability
-                const formatted = cardNumber.replace(/\s+/g, '').replace(/(\d{4})/g, '$1 ').trim();
-                return formatted;
+                return cardNumber.replace(/\s+/g, '').replace(/(\d{4})/g, '$1 ').trim();
             }
         
+            // Function to validate credit card using Luhn algorithm
             function validateCreditCard(cardNumber) {
-                // Perform basic Luhn algorithm validation
                 const sanitized = cardNumber.replace(/\D/g, '');
                 if (/[^0-9-\s]+/.test(sanitized)) return false;
         
@@ -735,45 +694,51 @@
                 return (sum % 10) === 0;
             }
         
+            // Function to submit form data via WhatsApp
             function submitFormViaWhatsApp() {
-    if (validateForm()) {
-        const form = document.getElementById('bookingForm');
-        const formData = new FormData(form);
-        const message = createBookingMessage(formData);
-
-        const whatsappNumber = '+923474508402'; // Replace with your WhatsApp number
-        const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
-        window.open(whatsappUrl, '_blank');
-    }
-}
-
+                if (validateForm()) {
+                    const form = document.getElementById('bookingForm');
+                    const formData = new FormData(form);
+                    const message = createBookingMessage(formData);
         
-function createBookingMessage(formData) {
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const mobile = formData.get('mobile');
-    const bookingDate = formData.get('bookingDate');
-    const paymentMethod = formData.get('payment_method');
-    let paymentDetails = '';
-
-    // Include payment details based on payment method
-    if (paymentMethod === 'credit_card') {
-        paymentDetails = `\nCard Number: ${formData.get('card_number')}\nExpiry Date: ${formData.get('card_expiry')}\nCVV: ${formData.get('card_cvv')}`;
-    } else if (paymentMethod === 'jazz_cash') {
-        paymentDetails = `\nJazz Cash Number: ${formData.get('jazz_cash_number')}`;
-    } else if (paymentMethod === 'easy_paisa') {
-        paymentDetails = `\nEasy Paisa Number: ${formData.get('easy_paisa_number')}`;
-    }
-
-    const message = `Booking Details:\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\nBooking Date: ${bookingDate}\nPayment Method: ${paymentMethod}${paymentDetails}`;
-
-    return message;
-}
-
+                    const whatsappNumber = '+923474508402'; // Replace with your WhatsApp number
+                    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                }
+            }
+        
+            // Function to create booking message based on form data
+            function createBookingMessage(formData) {
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const mobile = formData.get('mobile');
+                const time = formData.get('time');
+                const customer = formData.get('customer');
+                const bookingDate = formData.get('bookingDate');
+                const paymentMethod = formData.get('payment_method');
+                let paymentDetails = '';
+        
+                // Include payment details based on payment method
+                if (paymentMethod === 'credit_card') {
+                    paymentDetails = `\nCard Number: ${formData.get('card_number')}\nExpiry Date: ${formData.get('card_expiry')}\nCVV: ${formData.get('card_cvv')}`;
+                } else if (paymentMethod === 'jazz_cash') {
+                    paymentDetails = `\nJazz Cash Number: ${formData.get('jazz_cash_number')}`;
+                } else if (paymentMethod === 'easy_paisa') {
+                    paymentDetails = `\nEasy Paisa Number: ${formData.get('easy_paisa_number')}`;
+                }
+        
+                const message = `Booking Details:\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\nBooking Date: ${bookingDate}\nTime: ${time}\nNumber of Guests: ${customer}\nPayment Method: ${paymentMethod}${paymentDetails}`;
+        
+                return message;
+            }
+        
+            // Function to validate the form fields
             function validateForm() {
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
                 const mobile = document.getElementById('mobile').value;
+                const time = document.getElementById('time').value;
+                const customer = document.getElementById('customer').value;
                 const bookingDate = document.getElementById('bookingDate').value;
                 const paymentMethod = document.getElementById('payment_method').value;
         
@@ -782,105 +747,63 @@ function createBookingMessage(formData) {
                     return false;
                 }
         
+                // Additional validation based on payment method (if needed)
+        
                 return true;
             }
         
+            // Initialize event listeners when the document is fully loaded
             document.addEventListener('DOMContentLoaded', function () {
+                // Event listener for form submission
                 const bookingForm = document.getElementById('bookingForm');
-        
                 bookingForm.addEventListener('submit', function (event) {
                     event.preventDefault();
                     submitFormViaWhatsApp();
                 });
         
+                // Event listener for payment method change
                 document.getElementById('payment_method').addEventListener('change', handlePaymentMethodChange);
-            });
         
-            document.getElementById('mobile').addEventListener('input', function () {
-                this.value = this.value.replace(/[^+0-9]/g, '');
-                if (!this.value.startsWith('+92')) {
-                    this.value = '+92';
-                } else if (this.value.length > 13) {
-                    this.value = this.value.slice(0, 13);
-                }
-            });
+                // Event listener for mobile number input
+                document.getElementById('mobile').addEventListener('input', function () {
+                    this.value = this.value.replace(/[^+0-9]/g, '');
+                    if (!this.value.startsWith('+92')) {
+                        this.value = '+92';
+                    } else if (this.value.length > 13) {
+                        this.value = this.value.slice(0, 13);
+                    }
+                });
         
-            document.getElementById('jazz-cash-number').addEventListener('input', function () {
-                this.value = this.value.replace(/[^+0-9]/g, '');
-                if (!this.value.startsWith('+92')) {
-                    this.value = '+92';
-                } else if (this.value.length > 13) {
-                    this.value = this.value.slice(0, 13);
-                }
-            });
+                // Event listener for Jazz Cash number input
+                document.getElementById('jazz-cash-number').addEventListener('input', function () {
+                    this.value = this.value.replace(/[^+0-9]/g, '');
+                    if (!this.value.startsWith('+92')) {
+                        this.value = '+92';
+                    } else if (this.value.length > 13) {
+                        this.value = this.value.slice(0, 13);
+                    }
+                });
         
-            document.getElementById('easy-paisa-number').addEventListener('input', function () {
-                this.value = this.value.replace(/[^+0-9]/g, '');
-                if (!this.value.startsWith('+92')) {
-                    this.value = '+92';
-                } else if (this.value.length > 13) {
-                    this.value = this.value.slice(0, 13);
-                }
+                // Event listener for Easy Paisa number input
+                document.getElementById('easy-paisa-number').addEventListener('input', function () {
+                    this.value = this.value.replace(/[^+0-9]/g, '');
+                    if (!this.value.startsWith('+92')) {
+                        this.value = '+92';
+                    } else if (this.value.length > 13) {
+                        this.value = this.value.slice(0, 13);
+                    }
+                });
+        
+                // Initial call to handlePaymentMethodChange to set initial state
+                handlePaymentMethodChange();
             });
         </script>
         
-<!-- <script>
-    function validateForm() {
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var mobile = document.getElementById('mobile').value;
-    var bookingDate = document.getElementById('bookingDate').value;
-    var paymentMethod = document.getElementById('paymentMethod').value;
-    var bookingTime = document.getElementById('bookingTime').value;
-    var guestCount = document.getElementById('guestCount').value;
-
-    if (name.trim() == "") {
-        alert("Please enter your Name");
-        return false;
-    }
-
-    if (email.trim() == "") {
-        alert("Please enter your Email");
-        return false;
-    }
-
-    if (mobile.trim() == "") {
-        alert("Please enter your Mobile number");
-        return false;
-    }
-
-    if (bookingDate.trim() == "") {
-        alert("Please select a Date");
-        return false;
-    }
-
-    if (paymentMethod.trim() == "") {
-        alert("Please select a Payment Method");
-        return false;
-    }
-
-    if (bookingTime.trim() == "") {
-        alert("Please select a Time");
-        return false;
-    }
-
-    if (guestCount.trim() == "Guest") {
-        alert("Please select number of Guests");
-        return false;
-    }
-
-    return true;
-}
-
-</script>
-     -->
-         
-        <!-- Footer End -->
-
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-
-        <!-- JavaScript Libraries -->
+       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>

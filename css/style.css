@@ -650,6 +650,45 @@ a:focus {
 /*******************************/
 /********** About CSS **********/
 /*******************************/
+
+
+    .about {
+        padding: 50px 0; /* Add padding around the entire section */
+        background-color: #f9f9f9; /* Background color for the section */
+    }
+
+    .about-img img {
+        max-width: 100%; /* Ensure image responsiveness */
+        border-radius: 10px; /* Rounded corners for the image */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Box shadow for the image */
+    }
+
+    .section-header h2 {
+        font-size: 32px; /* Header font size */
+        font-weight: bold; /* Header font weight */
+        margin-bottom: 20px; /* Bottom margin for the header */
+    }
+
+    .about-text {
+        font-size: 18px; /* Font size for paragraphs */
+        line-height: 1.6; /* Line height for paragraphs */
+        color: #333; /* Text color */
+    }
+
+    .about-text ul {
+        margin-top: 20px; /* Top margin for the unordered list */
+        padding-left: 20px; /* Left padding for the unordered list */
+    }
+
+    .about-text ul li {
+        list-style-type: disc; /* Bullet style */
+        margin-bottom: 10px; /* Bottom margin for list items */
+    }
+
+    .about-text p:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+    }
+
 .about {
     position: relative;
     width: 100%;
